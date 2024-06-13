@@ -23,4 +23,4 @@ export const smtpUserName = process.env.SMTP_USERNAME || "";
 
 export const smtpPassword = process.env.SMTP_PASSWORD || "";
 
-export const frontendUrl = process.env.FRONTEND_URL || "";
+export const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000";

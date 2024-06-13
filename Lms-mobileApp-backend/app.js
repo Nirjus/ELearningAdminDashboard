@@ -10,6 +10,7 @@ import enrollRouter from "./routes/enrollRouter.js";
 import memberRouter from "./routes/memberRouter.js";
 import cookieParser from "cookie-parser";
 import { subscriptionRouter } from "./routes/subscriptionRouter.js";
+import { frontendUrl } from "./secret/secret.js";
 
 const app = express();
 
@@ -21,7 +22,7 @@ app.use(morgan("dev"));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: frontendUrl,
     credentials: true,
   })
 );
